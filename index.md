@@ -146,7 +146,6 @@ As a freelance consultant, I offer specialized services to help technical organi
     <p>Or reach me directly:</p>
     <ul>
       <li><a href="mailto:digvijay@digvijaysinha.com"><i class="fa fa-envelope"></i> digvijay@digvijaysinha.com</a></li>
-      <li><a href="tel:+491726363816"><i class="fa fa-phone"></i> +49 172 636 3816</a></li>
       <li><a href="https://www.linkedin.com/in/digvijaysinha"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
       <li><a href="https://github.com/digvijaysinha"><i class="fa fa-github"></i> GitHub</a></li>
     </ul>
