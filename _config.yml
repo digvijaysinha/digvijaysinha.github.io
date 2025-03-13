@@ -1,0 +1,111 @@
+# Site settings
+title: Digvijay Sinha
+email: digvijay@digvijaysinha.com
+description: >-
+  Cloud Architecture Consultant specializing in AWS, Azure, Kubernetes, 
+  and multi-cloud solutions with over 20 years of experience.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://digvijaysinha.github.io" # the base hostname & protocol for your site
+twitter_username: # your Twitter username (if applicable)
+github_username: digvijaysinha
+linkedin_username: digvijaysinha
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Theme customization
+minima:
+  skin: classic
+  date_format: "%b %-d, %Y"
+  social_links:
+    twitter: # your Twitter username (if applicable)
+    github: digvijaysinha
+    linkedin: digvijaysinha
+
+# Collections
+collections:
+  architecture:
+    output: true
+    permalink: /:collection/:name
+  projects:
+    output: true
+    permalink: /:collection/:name
+
+# Default front matter for posts and pages
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Digvijay Sinha"
+      permalink: /blog/:year/:month/:day/:title/
+  - scope:
+      path: ""
+      type: "architecture"
+    values:
+      layout: "architecture"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Pagination settings
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+  auto_ids: true
+  toc_levels: 1..3
+
+# Additional settings
+show_excerpts: true
+future: false
+timezone: Europe/Berlin
+
+# Custom settings for your blog
+header_pages:
+  - architecture.md
+  - blog.md
+  - certifications.md
+  - about.md
+  - contact.md
+
+# SEO settings
+twitter:
+  username: # your Twitter username (if applicable)
+  card: summary_large_image
+
+author:
+  name: Digvijay Sinha
+  twitter: # your Twitter username (if applicable)
+  
+# Google Analytics
+google_analytics: # UA-XXXXXXXX-X or G-XXXXXXXXXX
